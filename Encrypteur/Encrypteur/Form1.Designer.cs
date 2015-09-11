@@ -29,17 +29,19 @@
         private void InitializeComponent()
         {
             this.GB_Rbutton = new System.Windows.Forms.GroupBox();
+            this.NUD_Circulaire = new System.Windows.Forms.NumericUpDown();
             this.NUD_Rotation = new System.Windows.Forms.NumericUpDown();
             this.RB_Perso = new System.Windows.Forms.RadioButton();
             this.RB_Circulaire = new System.Windows.Forms.RadioButton();
             this.RB_Rotation = new System.Windows.Forms.RadioButton();
-            this.TB_ = new System.Windows.Forms.TextBox();
+            this.TB_Text = new System.Windows.Forms.TextBox();
             this.BTN_Save = new System.Windows.Forms.Button();
             this.BTN_Load = new System.Windows.Forms.Button();
-            this.NUD_Circulaire = new System.Windows.Forms.NumericUpDown();
+            this.BTN_Encrypter = new System.Windows.Forms.Button();
+            this.BTN_Decrypter = new System.Windows.Forms.Button();
             this.GB_Rbutton.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NUD_Rotation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_Circulaire)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUD_Rotation)).BeginInit();
             this.SuspendLayout();
             // 
             // GB_Rbutton
@@ -55,6 +57,19 @@
             this.GB_Rbutton.TabIndex = 0;
             this.GB_Rbutton.TabStop = false;
             this.GB_Rbutton.Text = "Type Encryption";
+            // 
+            // NUD_Circulaire
+            // 
+            this.NUD_Circulaire.Enabled = false;
+            this.NUD_Circulaire.Location = new System.Drawing.Point(81, 43);
+            this.NUD_Circulaire.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.NUD_Circulaire.Name = "NUD_Circulaire";
+            this.NUD_Circulaire.Size = new System.Drawing.Size(33, 20);
+            this.NUD_Circulaire.TabIndex = 4;
             // 
             // NUD_Rotation
             // 
@@ -103,13 +118,14 @@
             this.RB_Rotation.UseVisualStyleBackColor = true;
             this.RB_Rotation.Click += new System.EventHandler(this.RB_All_Click);
             // 
-            // TB_
+            // TB_Text
             // 
-            this.TB_.Location = new System.Drawing.Point(163, 41);
-            this.TB_.Multiline = true;
-            this.TB_.Name = "TB_";
-            this.TB_.Size = new System.Drawing.Size(227, 100);
-            this.TB_.TabIndex = 1;
+            this.TB_Text.Location = new System.Drawing.Point(163, 41);
+            this.TB_Text.Multiline = true;
+            this.TB_Text.Name = "TB_Text";
+            this.TB_Text.Size = new System.Drawing.Size(227, 100);
+            this.TB_Text.TabIndex = 1;
+            this.TB_Text.TextChanged += new System.EventHandler(this.TB_Text_TextChanged);
             // 
             // BTN_Save
             // 
@@ -129,34 +145,43 @@
             this.BTN_Load.Text = "Importer";
             this.BTN_Load.UseVisualStyleBackColor = true;
             // 
-            // NUD_Circulaire
+            // BTN_Encrypter
             // 
-            this.NUD_Circulaire.Enabled = false;
-            this.NUD_Circulaire.Location = new System.Drawing.Point(81, 43);
-            this.NUD_Circulaire.Maximum = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            this.NUD_Circulaire.Name = "NUD_Circulaire";
-            this.NUD_Circulaire.Size = new System.Drawing.Size(33, 20);
-            this.NUD_Circulaire.TabIndex = 4;
+            this.BTN_Encrypter.Location = new System.Drawing.Point(9, 147);
+            this.BTN_Encrypter.Name = "BTN_Encrypter";
+            this.BTN_Encrypter.Size = new System.Drawing.Size(75, 23);
+            this.BTN_Encrypter.TabIndex = 4;
+            this.BTN_Encrypter.Text = "Encrypter";
+            this.BTN_Encrypter.UseVisualStyleBackColor = true;
+            this.BTN_Encrypter.Click += new System.EventHandler(this.BTN_Encrypter_Click);
+            // 
+            // BTN_Decrypter
+            // 
+            this.BTN_Decrypter.Location = new System.Drawing.Point(90, 146);
+            this.BTN_Decrypter.Name = "BTN_Decrypter";
+            this.BTN_Decrypter.Size = new System.Drawing.Size(75, 23);
+            this.BTN_Decrypter.TabIndex = 5;
+            this.BTN_Decrypter.Text = "Decrypter";
+            this.BTN_Decrypter.UseVisualStyleBackColor = true;
+            this.BTN_Decrypter.Click += new System.EventHandler(this.BTN_Decrypter_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(402, 263);
+            this.Controls.Add(this.BTN_Decrypter);
+            this.Controls.Add(this.BTN_Encrypter);
             this.Controls.Add(this.BTN_Load);
             this.Controls.Add(this.BTN_Save);
-            this.Controls.Add(this.TB_);
+            this.Controls.Add(this.TB_Text);
             this.Controls.Add(this.GB_Rbutton);
             this.Name = "Form1";
             this.Text = "Form1";
             this.GB_Rbutton.ResumeLayout(false);
             this.GB_Rbutton.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NUD_Rotation)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_Circulaire)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUD_Rotation)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,10 +194,12 @@
         private System.Windows.Forms.RadioButton RB_Circulaire;
         private System.Windows.Forms.RadioButton RB_Rotation;
         private System.Windows.Forms.NumericUpDown NUD_Rotation;
-        private System.Windows.Forms.TextBox TB_;
+        private System.Windows.Forms.TextBox TB_Text;
         private System.Windows.Forms.Button BTN_Save;
         private System.Windows.Forms.Button BTN_Load;
         private System.Windows.Forms.NumericUpDown NUD_Circulaire;
+        private System.Windows.Forms.Button BTN_Encrypter;
+        private System.Windows.Forms.Button BTN_Decrypter;
     }
 }
 

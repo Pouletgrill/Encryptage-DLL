@@ -1,0 +1,5 @@
+C:\Users\201354694\Desktop\Encryptage-DLL\Encrypteur\DLLEncrypt\bin\Debug\DLLEncrypt.dll
+C:\Users\201354694\Desktop\Encryptage-DLL\Encrypteur\DLLEncrypt\bin\Debug\DLLEncrypt.pdb
+C:\Users\201354694\Desktop\Encryptage-DLL\Encrypteur\DLLEncrypt\obj\Debug\DLLEncrypt.csprojResolveAssemblyReference.cache
+C:\Users\201354694\Desktop\Encryptage-DLL\Encrypteur\DLLEncrypt\obj\Debug\DLLEncrypt.dll
+C:\Users\201354694\Desktop\Encryptage-DLL\Encrypteur\DLLEncrypt\obj\Debug\DLLEncrypt.pdb

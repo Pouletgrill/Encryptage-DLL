@@ -7,3 +7,14 @@ C:\Users\201354694\Desktop\Encrypteur\Encrypteur\obj\Debug\Encrypteur.Properties
 C:\Users\201354694\Desktop\Encrypteur\Encrypteur\obj\Debug\Encrypteur.csproj.GenerateResource.Cache
 C:\Users\201354694\Desktop\Encrypteur\Encrypteur\obj\Debug\Encrypteur.exe
 C:\Users\201354694\Desktop\Encrypteur\Encrypteur\obj\Debug\Encrypteur.pdb
+C:\Users\201354694\Desktop\Encryptage-DLL\Encrypteur\Encrypteur\bin\Debug\Encrypteur.exe.config
+C:\Users\201354694\Desktop\Encryptage-DLL\Encrypteur\Encrypteur\obj\Debug\Encrypteur.exe
+C:\Users\201354694\Desktop\Encryptage-DLL\Encrypteur\Encrypteur\obj\Debug\Encrypteur.pdb
+C:\Users\201354694\Desktop\Encryptage-DLL\Encrypteur\Encrypteur\bin\Debug\Encrypteur.exe
+C:\Users\201354694\Desktop\Encryptage-DLL\Encrypteur\Encrypteur\bin\Debug\Encrypteur.pdb
+C:\Users\201354694\Desktop\Encryptage-DLL\Encrypteur\Encrypteur\obj\Debug\Encrypteur.csprojResolveAssemblyReference.cache
+C:\Users\201354694\Desktop\Encryptage-DLL\Encrypteur\Encrypteur\obj\Debug\Encrypteur.Form1.resources
+C:\Users\201354694\Desktop\Encryptage-DLL\Encrypteur\Encrypteur\obj\Debug\Encrypteur.Properties.Resources.resources
+C:\Users\201354694\Desktop\Encryptage-DLL\Encrypteur\Encrypteur\obj\Debug\Encrypteur.csproj.GenerateResource.Cache
+C:\Users\201354694\Desktop\Encryptage-DLL\Encrypteur\Encrypteur\bin\Debug\DLLEncrypt.dll
+C:\Users\201354694\Desktop\Encryptage-DLL\Encrypteur\Encrypteur\bin\Debug\DLLEncrypt.pdb
