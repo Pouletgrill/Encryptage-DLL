@@ -1,0 +1,7 @@
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+
+ABCDEF 2
+
+EF-ABCD
