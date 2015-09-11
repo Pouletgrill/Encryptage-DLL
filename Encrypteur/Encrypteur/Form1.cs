@@ -64,11 +64,11 @@ namespace Encrypteur
         {
             if (RB_Rotation.Checked)
             {
-                TB_Text.Text = Rotation_dll.Encrypter(TB_Text.Text);
+                TB_Text.Text = Rotation_dll.Encrypter(TB_Text.Text, Convert.ToInt32(NUD_Rotation.Value));
             }
             else if (RB_Circulaire.Checked)
             {
-                TB_Text.Text = Circulaire_dll.Encrypter(TB_Text.Text);
+                TB_Text.Text = Circulaire_dll.Encrypter(TB_Text.Text, Convert.ToInt32(NUD_Circulaire.Value));
             }
             else
             {
@@ -81,11 +81,11 @@ namespace Encrypteur
         {
             if (RB_Rotation.Checked)
             {
-                TB_Text.Text = Rotation_dll.Decrypter(TB_Text.Text);
+                TB_Text.Text = Rotation_dll.Decrypter(TB_Text.Text, Convert.ToInt32(NUD_Rotation.Value));
             }
             else if (RB_Circulaire.Checked)
             {
-                TB_Text.Text = Circulaire_dll.Decrypter(TB_Text.Text);
+                TB_Text.Text = Circulaire_dll.Decrypter(TB_Text.Text, Convert.ToInt32(NUD_Circulaire.Value));
             }
             else
             {

@@ -8,11 +8,11 @@ namespace DLLEncrypt
 {
     public class Circulaire_dll
     {
-        public static string Encrypter(string Chaine)
+        public static string Encrypter(string Chaine, int indice)
         {
             return Chaine + "_E_CIR";
         }
-        public static string Decrypter(string Chaine)
+        public static string Decrypter(string Chaine, int indice)
         {
             return Chaine + "_D_CIR";
         }
