@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DLLEncrypt;
+using System.IO;
 
 namespace Encrypteur
 {
@@ -91,6 +92,19 @@ namespace Encrypteur
             {
                 TB_Text.Text = Autre_dll.Decrypter(TB_Text.Text);
             }
+        }
+
+        private void BTN_Save_Click(object sender, EventArgs e)
+        {
+            if (SFD_Save.ShowDialog() == DialogResult.OK)
+            {
+                File.WriteAllText(SFD_Save.FileName, TB_Text.Text);
+            }
+        }
+
+        private void BTN_Load_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

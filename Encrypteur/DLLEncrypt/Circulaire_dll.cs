@@ -11,34 +11,50 @@ namespace DLLEncrypt
         public static string Encrypter(string Chaine, int indice)
         {
             string chaine = "";
-            for (int i = 0; i < Chaine.Length;i++ )
+            for (int i = 0; i < Chaine.Length; i++)
             {
-                if (i<indice)
+                if (i < indice)
                 {
-                    chaine += Chaine[Chaine.Length-indice+i];
+                    chaine += Chaine[Chaine.Length - indice + i];
                 }
                 else
                 {
                     chaine += Chaine[i - indice];
                 }
             }
-                return chaine;
+            return chaine;
         }
         public static string Decrypter(string Chaine, int indice)
         {
-            string chaine = "";
-            for (int i = 0; i < Chaine.Length;i++ )
+            string chaineA = "";
+            string chaineB = "";
+            for (int i = 0; i < Chaine.Length; i++)
             {
-                if (i<=indice)
+
+                //grillpoulet
+                if (i<indice)
                 {
-                    chaine += Chaine[i + indice]; //grillpoulet
+                    chaineB += Chaine[i];
                 }
                 else
                 {
-                    chaine += Chaine[i - indice-1];//WTF
+                    chaineA += Chaine[i];
                 }
+
+
+
+
+
+                //if (i>indice)
+                //{
+                //    chaine += Chaine[i + indice]; 
+                //}
+                //else
+                //{
+                //    chaine += Chaine[i - indice-1];//WTF
+                //}
             }
-                return chaine;
+            return chaineA+chaineB;
         }
     }
 }

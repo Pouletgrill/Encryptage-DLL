@@ -39,6 +39,7 @@
             this.BTN_Load = new System.Windows.Forms.Button();
             this.BTN_Encrypter = new System.Windows.Forms.Button();
             this.BTN_Decrypter = new System.Windows.Forms.Button();
+            this.SFD_Save = new System.Windows.Forms.SaveFileDialog();
             this.GB_Rbutton.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_Circulaire)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_Rotation)).BeginInit();
@@ -120,36 +121,38 @@
             // 
             // TB_Text
             // 
-            this.TB_Text.Location = new System.Drawing.Point(163, 41);
+            this.TB_Text.Location = new System.Drawing.Point(163, 12);
             this.TB_Text.Multiline = true;
             this.TB_Text.Name = "TB_Text";
-            this.TB_Text.Size = new System.Drawing.Size(227, 100);
+            this.TB_Text.Size = new System.Drawing.Size(227, 158);
             this.TB_Text.TabIndex = 1;
             this.TB_Text.TextChanged += new System.EventHandler(this.TB_Text_TextChanged);
             // 
             // BTN_Save
             // 
-            this.BTN_Save.Location = new System.Drawing.Point(93, 12);
+            this.BTN_Save.Location = new System.Drawing.Point(77, 12);
             this.BTN_Save.Name = "BTN_Save";
-            this.BTN_Save.Size = new System.Drawing.Size(75, 23);
+            this.BTN_Save.Size = new System.Drawing.Size(80, 23);
             this.BTN_Save.TabIndex = 2;
             this.BTN_Save.Text = "Sauvegarder";
             this.BTN_Save.UseVisualStyleBackColor = true;
+            this.BTN_Save.Click += new System.EventHandler(this.BTN_Save_Click);
             // 
             // BTN_Load
             // 
             this.BTN_Load.Location = new System.Drawing.Point(12, 12);
             this.BTN_Load.Name = "BTN_Load";
-            this.BTN_Load.Size = new System.Drawing.Size(75, 23);
+            this.BTN_Load.Size = new System.Drawing.Size(59, 23);
             this.BTN_Load.TabIndex = 3;
             this.BTN_Load.Text = "Importer";
             this.BTN_Load.UseVisualStyleBackColor = true;
+            this.BTN_Load.Click += new System.EventHandler(this.BTN_Load_Click);
             // 
             // BTN_Encrypter
             // 
-            this.BTN_Encrypter.Location = new System.Drawing.Point(9, 147);
+            this.BTN_Encrypter.Location = new System.Drawing.Point(12, 147);
             this.BTN_Encrypter.Name = "BTN_Encrypter";
-            this.BTN_Encrypter.Size = new System.Drawing.Size(75, 23);
+            this.BTN_Encrypter.Size = new System.Drawing.Size(67, 23);
             this.BTN_Encrypter.TabIndex = 4;
             this.BTN_Encrypter.Text = "Encrypter";
             this.BTN_Encrypter.UseVisualStyleBackColor = true;
@@ -157,19 +160,25 @@
             // 
             // BTN_Decrypter
             // 
-            this.BTN_Decrypter.Location = new System.Drawing.Point(90, 146);
+            this.BTN_Decrypter.Location = new System.Drawing.Point(90, 147);
             this.BTN_Decrypter.Name = "BTN_Decrypter";
-            this.BTN_Decrypter.Size = new System.Drawing.Size(75, 23);
+            this.BTN_Decrypter.Size = new System.Drawing.Size(67, 23);
             this.BTN_Decrypter.TabIndex = 5;
             this.BTN_Decrypter.Text = "Decrypter";
             this.BTN_Decrypter.UseVisualStyleBackColor = true;
             this.BTN_Decrypter.Click += new System.EventHandler(this.BTN_Decrypter_Click);
             // 
+            // SFD_Save
+            // 
+            this.SFD_Save.CheckPathExists = false;
+            this.SFD_Save.DefaultExt = "txt";
+            this.SFD_Save.Filter = "|*.txt";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(402, 263);
+            this.ClientSize = new System.Drawing.Size(402, 180);
             this.Controls.Add(this.BTN_Decrypter);
             this.Controls.Add(this.BTN_Encrypter);
             this.Controls.Add(this.BTN_Load);
@@ -200,6 +209,7 @@
         private System.Windows.Forms.NumericUpDown NUD_Circulaire;
         private System.Windows.Forms.Button BTN_Encrypter;
         private System.Windows.Forms.Button BTN_Decrypter;
+        private System.Windows.Forms.SaveFileDialog SFD_Save;
     }
 }
 
