@@ -104,7 +104,10 @@ namespace Encrypteur
 
         private void BTN_Load_Click(object sender, EventArgs e)
         {
-
+            if(OFD_Open.ShowDialog() == DialogResult.OK)
+            {
+                TB_Text.Text = File.ReadAllText(OFD_Open.FileName);
+            }
         }
     }
 }

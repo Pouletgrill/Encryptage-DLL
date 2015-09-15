@@ -40,6 +40,7 @@
             this.BTN_Encrypter = new System.Windows.Forms.Button();
             this.BTN_Decrypter = new System.Windows.Forms.Button();
             this.SFD_Save = new System.Windows.Forms.SaveFileDialog();
+            this.OFD_Open = new System.Windows.Forms.OpenFileDialog();
             this.GB_Rbutton.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_Circulaire)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_Rotation)).BeginInit();
@@ -174,6 +175,13 @@
             this.SFD_Save.DefaultExt = "txt";
             this.SFD_Save.Filter = "|*.txt";
             // 
+            // OFD_Open
+            // 
+            this.OFD_Open.CheckFileExists = false;
+            this.OFD_Open.CheckPathExists = false;
+            this.OFD_Open.DefaultExt = "txt";
+            this.OFD_Open.Filter = "|*.txt";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -210,6 +218,7 @@
         private System.Windows.Forms.Button BTN_Encrypter;
         private System.Windows.Forms.Button BTN_Decrypter;
         private System.Windows.Forms.SaveFileDialog SFD_Save;
+        private System.Windows.Forms.OpenFileDialog OFD_Open;
     }
 }
 

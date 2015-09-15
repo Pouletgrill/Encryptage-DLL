@@ -44,7 +44,7 @@ namespace DLLEncrypt
                 //entre 97 et 122	minuscule
                 if ((Chaine[i] >= 65 && Chaine[i] <= 90)/*MAJUSCULE*/ || (Chaine[i] >= 97 && Chaine[i] <= 122)/*minuscule*/)
                 {
-                    if ((Chaine[i] - indice) > 90 && (Chaine[i] - indice) < 97)
+                    if ((Chaine[i] - indice) > 90 && (Chaine[i] - indice) <= 97)
                     {
                         chaine += Convert.ToChar(Chaine[i] - indice - 6);
                     }
