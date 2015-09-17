@@ -10,23 +10,26 @@ namespace DLLEncrypt
     {
         public static string Encrypter(string Chaine)
         {
-            int indice;
             string chaine = "";
+            int indice=0;
+            int indice_Incr_Modulo = 26;
+
             for (int i = 0; i < Chaine.Length; i++)
             {
-                indice = i + 1;
+                indice = i % indice_Incr_Modulo;
                 //entre 65 et 90 	MAJUSCULE
-                //entre 97 et 122	minuscule
-                if ((Chaine[i] >= 65 && Chaine[i] <= 90) || (Chaine[i] >= 97 && Chaine[i] <= 122))
+                if (Chaine[i] >= 65 && Chaine[i] <= 90)
                 {
-                    if ((Chaine[i] + indice) > 90 && (Chaine[i] + indice) < 97)
-                    {
+                    if (Chaine[i] + indice > 90)
                         chaine += Convert.ToChar(Chaine[i] + indice + 6);
-                    }
-                    else if ((Chaine[i] + indice) > 122)
-                    {
-                        chaine += Convert.ToChar(Chaine[i] + indice - 58);
-                    }
+                    else
+                        chaine += Convert.ToChar(Chaine[i] + indice);
+                }
+                //entre 97 et 122	minuscule
+                else if (Chaine[i] >= 97 && Chaine[i] <= 122)
+                {
+                    if (Chaine[i] + indice > 122)
+                        chaine += Convert.ToChar(((Chaine[i] + indice) % 122) + 64);
                     else
                         chaine += Convert.ToChar(Chaine[i] + indice);
                 }
@@ -39,23 +42,26 @@ namespace DLLEncrypt
         }
         public static string Decrypter(string Chaine)
         {
-            int indice;
             string chaine = "";
+            int indice = 0;
+            int indice_Incr_Modulo = 26;
+
             for (int i = 0; i < Chaine.Length; i++)
             {
-                indice = i + 1;
+                indice = i % indice_Incr_Modulo;
                 //entre 65 et 90 	MAJUSCULE
-                //entre 97 et 122	minuscule
-                if ((Chaine[i] >= 65 && Chaine[i] <= 90)/*MAJUSCULE*/ || (Chaine[i] >= 97 && Chaine[i] <= 122)/*minuscule*/)
+                if (Chaine[i] >= 65 && Chaine[i] <= 90)
                 {
-                    if ((Chaine[i] - indice) > 90 && (Chaine[i] - indice) < 97)
-                    {
-                        chaine += Convert.ToChar(Chaine[i] - indice - 6);
-                    }
-                    else if ((Chaine[i] - indice) < 65)
-                    {
+                    if (Chaine[i] - indice < 65)
                         chaine += Convert.ToChar(Chaine[i] - indice + 58);
-                    }
+                    else
+                        chaine += Convert.ToChar(Chaine[i] - indice);
+                }
+                //entre 97 et 122	minuscule
+                else if (Chaine[i] >= 97 && Chaine[i] <= 122)
+                {
+                    if (Chaine[i] - indice < 97)
+                        chaine += Convert.ToChar(Chaine[i] - indice - 6);
                     else
                         chaine += Convert.ToChar(Chaine[i] - indice);
                 }

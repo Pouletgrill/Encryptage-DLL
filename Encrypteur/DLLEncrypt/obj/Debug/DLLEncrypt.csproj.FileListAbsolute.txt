@@ -2,3 +2,8 @@ C:\Users\201354694\Desktop\Encryptage-DLL\Encrypteur\DLLEncrypt\bin\Debug\DLLEnc
 C:\Users\201354694\Desktop\Encryptage-DLL\Encrypteur\DLLEncrypt\bin\Debug\DLLEncrypt.pdb
 C:\Users\201354694\Desktop\Encryptage-DLL\Encrypteur\DLLEncrypt\obj\Debug\DLLEncrypt.dll
 C:\Users\201354694\Desktop\Encryptage-DLL\Encrypteur\DLLEncrypt\obj\Debug\DLLEncrypt.pdb
+C:\Users\PouletGrill\Documents\GitHub\Encryptage-DLL\Encrypteur\DLLEncrypt\bin\Debug\DLLEncrypt.dll
+C:\Users\PouletGrill\Documents\GitHub\Encryptage-DLL\Encrypteur\DLLEncrypt\bin\Debug\DLLEncrypt.pdb
+C:\Users\PouletGrill\Documents\GitHub\Encryptage-DLL\Encrypteur\DLLEncrypt\obj\Debug\DLLEncrypt.csprojResolveAssemblyReference.cache
+C:\Users\PouletGrill\Documents\GitHub\Encryptage-DLL\Encrypteur\DLLEncrypt\obj\Debug\DLLEncrypt.dll
+C:\Users\PouletGrill\Documents\GitHub\Encryptage-DLL\Encrypteur\DLLEncrypt\obj\Debug\DLLEncrypt.pdb

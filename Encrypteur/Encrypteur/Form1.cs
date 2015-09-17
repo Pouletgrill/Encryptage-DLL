@@ -36,6 +36,7 @@ namespace Encrypteur
             {
                 NUD_Rotation.Enabled = false;
                 NUD_Circulaire.Enabled = true;
+                NUD_Circulaire.Maximum = TB_Text.Text.Length;
             }
             else
             {
@@ -59,6 +60,7 @@ namespace Encrypteur
         private void TB_Text_TextChanged(object sender, EventArgs e)
         {
             Refresh_Button();
+            NUD_Circulaire.Maximum = TB_Text.Text.Length;
         }
 
         private void BTN_Encrypter_Click(object sender, EventArgs e)

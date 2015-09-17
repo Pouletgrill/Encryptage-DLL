@@ -18,3 +18,14 @@ C:\Users\201354694\Desktop\Encryptage-DLL\Encrypteur\Encrypteur\obj\Debug\Encryp
 C:\Users\201354694\Desktop\Encryptage-DLL\Encrypteur\Encrypteur\obj\Debug\Encrypteur.csproj.GenerateResource.Cache
 C:\Users\201354694\Desktop\Encryptage-DLL\Encrypteur\Encrypteur\obj\Debug\Encrypteur.exe
 C:\Users\201354694\Desktop\Encryptage-DLL\Encrypteur\Encrypteur\obj\Debug\Encrypteur.pdb
+C:\Users\PouletGrill\Documents\GitHub\Encryptage-DLL\Encrypteur\Encrypteur\bin\Debug\Encrypteur.exe.config
+C:\Users\PouletGrill\Documents\GitHub\Encryptage-DLL\Encrypteur\Encrypteur\obj\Debug\Encrypteur.exe
+C:\Users\PouletGrill\Documents\GitHub\Encryptage-DLL\Encrypteur\Encrypteur\obj\Debug\Encrypteur.pdb
+C:\Users\PouletGrill\Documents\GitHub\Encryptage-DLL\Encrypteur\Encrypteur\bin\Debug\Encrypteur.exe
+C:\Users\PouletGrill\Documents\GitHub\Encryptage-DLL\Encrypteur\Encrypteur\bin\Debug\Encrypteur.pdb
+C:\Users\PouletGrill\Documents\GitHub\Encryptage-DLL\Encrypteur\Encrypteur\bin\Debug\DLLEncrypt.dll
+C:\Users\PouletGrill\Documents\GitHub\Encryptage-DLL\Encrypteur\Encrypteur\bin\Debug\DLLEncrypt.pdb
+C:\Users\PouletGrill\Documents\GitHub\Encryptage-DLL\Encrypteur\Encrypteur\obj\Debug\Encrypteur.csprojResolveAssemblyReference.cache
+C:\Users\PouletGrill\Documents\GitHub\Encryptage-DLL\Encrypteur\Encrypteur\obj\Debug\Encrypteur.Form1.resources
+C:\Users\PouletGrill\Documents\GitHub\Encryptage-DLL\Encrypteur\Encrypteur\obj\Debug\Encrypteur.Properties.Resources.resources
+C:\Users\PouletGrill\Documents\GitHub\Encryptage-DLL\Encrypteur\Encrypteur\obj\Debug\Encrypteur.csproj.GenerateResource.Cache
