@@ -70,7 +70,7 @@
             0,
             0});
             this.NUD_Circulaire.Name = "NUD_Circulaire";
-            this.NUD_Circulaire.Size = new System.Drawing.Size(33, 20);
+            this.NUD_Circulaire.Size = new System.Drawing.Size(58, 20);
             this.NUD_Circulaire.TabIndex = 4;
             // 
             // NUD_Rotation
@@ -82,7 +82,7 @@
             0,
             0});
             this.NUD_Rotation.Name = "NUD_Rotation";
-            this.NUD_Rotation.Size = new System.Drawing.Size(33, 20);
+            this.NUD_Rotation.Size = new System.Drawing.Size(58, 20);
             this.NUD_Rotation.TabIndex = 3;
             // 
             // RB_Perso

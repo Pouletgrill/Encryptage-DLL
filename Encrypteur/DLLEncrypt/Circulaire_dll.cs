@@ -13,7 +13,7 @@ namespace DLLEncrypt
             string chaine = "";
             for (int i = 0; i < Chaine.Length; i++)
             {
-                if (i < indice)
+                if (i < indice)//si le caractère fait partie de ceux a inverser
                 {
                     chaine += Chaine[Chaine.Length - indice + i];
                 }
@@ -30,9 +30,7 @@ namespace DLLEncrypt
             string chaineB = "";
             for (int i = 0; i < Chaine.Length; i++)
             {
-
-                //grillpoulet
-                if (i<indice)
+                if (i<indice)//si le caractère fait partie de ceux a inverser
                 {
                     chaineB += Chaine[i];
                 }
@@ -40,21 +38,8 @@ namespace DLLEncrypt
                 {
                     chaineA += Chaine[i];
                 }
-
-
-
-
-
-                //if (i>indice)
-                //{
-                //    chaine += Chaine[i + indice]; 
-                //}
-                //else
-                //{
-                //    chaine += Chaine[i - indice-1];//WTF
-                //}
             }
-            return chaineA+chaineB;
+            return chaineA+chaineB;//Inversage des chaine
         }
     }
 }
